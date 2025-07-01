@@ -1,0 +1,134 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  height: 40rem;
+  margin-top: 15rem;
+  /* background-color: red; */
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.image-content,
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  /* border-radius: 50%; */
+  /* background: #FFF; */
+  padding: 0.2rem;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  /* border: 4px solid #c39f7a; */
+}
+
+.name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #c39f7a;
+}
+
+.description i {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.526);
+
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #c39f7a;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.description i, .button {
+  margin-top: 2rem;
+}
+
+.swiper-navBtn {
+  color: #c39f7a;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.swiper-navBtn {
+  /* content: "";
+  border-top: 1px solid red;
+  position: relative;
+  top: -40px;
+  right: 0rem;
+  left: 0rem;
+  height: 1px;
+  width: 40px; */
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c39f7a;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.792)
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+}
